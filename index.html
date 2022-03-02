@@ -1,26 +1,29 @@
 <html>
-
-<head>
+  <head>
     <style>
-        #nav{
-            width: 60px;
-            height: 60px;
-            background-color: red;
-            margin-left: 10px;
-        }
+      #nav {
+        width: 60px;
+        height: 60px;
+        background-color: red;
+        margin-left: 10px;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <h3>Provo a caricare a.js</h3>
+  <body>
+    <h3>SPOSTARE UN QUADRATO</h3>
     <div id="risultato">Qui deve apparire il risultato</div>
-    <div id="nav"> nav</div>
-    <div>BELLA MODIFICA</div>
+    <br />
+    <div id="nav">nav</div>
+    <br />
+    <div>Comandi</div>
+    <br />
     <div>
-        <button onclick="move(1)">+</button>
-        <button onclick="move(2)">-</button>
+      <button onclick="move(0)">+ destra</button>
+      <button onclick="move(1)">- sinistra</button>
+      <button onclick="move(2)">- sopra</button>
+      <button onclick="move(3)">- sotto</button>
     </div>
-   <script type="text/javascript" src="a.js" ></script>
- </body>
-
+    <script type="text/javascript" src="a.js"></script>
+  </body>
 </html>
