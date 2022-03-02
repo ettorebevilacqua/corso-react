@@ -23,10 +23,20 @@ git clone urlrepository
 ATTENZIONE una volta clonato il progetto, lui crea una cartella con il progetto, bisogna entrare dentro la cartella appena creata !! 
 diversamente da errore che non ci si trova dentro al repository 
 
-Il clone di git crea una cartella
-dove crea la cartella ?? DENTRO ALLA CARTELLA DOVE HO LANCIATO IL COMANDO CLONE
+I comandi di TUTTI I GIORNALI 
 
-sono dentro una cartella , faccio git clone e dentro la cartella dove mi trovo , crea la cartella con il progetto con nome del progetto 
+git status vede le modifiche correnti, se non ci sono da vuoto 
 
-DEVO APRIRE LA CARTELLA APPENA CREATA 
+// AGGIUNGIAMO I FILE DOVE VOGLIO FARE IL COMMIT 
+
+git add . // aggiunge tutti file MODIFICATI
+oppure git add nomeFile -> specifico un file, o divisi da spazio un elenco di file 
+
+// devo fare il commit 
+
+Il commit inserisce le modifiche dentro al repository locale, 
+Se le voglio su quello esterno devo fare push 
+IL PUSH CONFERMA LE MODIFICHE 
+
+
 
