@@ -8,7 +8,7 @@
   
  ![windows folder](./img/win_folder.png)
 
-* Aprire il terminale che si può trovare cercando cmd dal menu avvio.
+* Aprire il terminale di sistema che si può trovare cercando cmd dal menu avvio.
 
 * e scrivere cd e incolla del indirizzo della cartella:  
 `cd path_mio_progetto` 
@@ -43,10 +43,10 @@ per evitare malfunzionamenti o tipicamente che git non funziona su una cartella 
 
 mi dovrei trovare le cartelle di questo tipo
 
-corso 
-   |  corso-react
-   |  Asteroid
-   |  esempio
+-corso
+  - |  corso-react
+  - |  Asteroid
+  - |  esempio
 
 Ripeto : aprire la cartella dentro a corso, non corso.
 
