@@ -1,3 +1,6 @@
+git clone :
+
+
 // nuovo progetto 
 
 echo "# corso-react" >> README.md // crea il file readme 
