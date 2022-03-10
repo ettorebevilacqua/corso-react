@@ -6,10 +6,18 @@
  i paramentri vengono dichiariti dentro le parentesi della dichiarazione della funzione
  i parametri passati prendono un nome a piacimento.
  quando chiamo la funzione passo dei valori come parametri.
-  
+
 */// ALT 96
 
 
+// **************************** 
+function leggiESomma(listaPassata, accumulatore){
+    const valore=listaPassata[i]; // legge
+
+    accumulatore +=  valore; // somma
+    console.log(`sono dentro a tmp valore i=${i} acc=${accumulatore} `);
+    return accumulatore
+}
 
 function somma(listaPassata, secondoPar){
     console.log(`sono dentro a somma, listaPassata= ${listaPassata} `);
@@ -17,16 +25,15 @@ function somma(listaPassata, secondoPar){
 
     if (!listaPassata.length) return listaPassata + secondoPar;
     // if (typeof(listaPassata) === 'number')   listaPassata + secondoPar;
-    
     for(let i=0; i<listaPassata.length; i++){
-        const valore=listaPassata[i];
-
-        accumulatore +=  valore;
+        leggiESomma(listaPassata, accumulatore);
         console.log(`sono dentro al for valore valore i=${i} acc=${accumulatore} `);
     }
 
     return accumulatore;
 }
+
+
 
 // Qui sotto chiamo la stessa funzione più volte passando parametri diversi.
 
