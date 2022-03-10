@@ -9,10 +9,13 @@
   
 */
 
-function somma(listaPassata){
+function somma(listaPassata, secondoPar){
     console.log('sono dentro a somma, listaPassata=', listaPassata);
     let accumulatore = 0;
 
+    if (!listaPassata.length) return listaPassata + secondoPar;
+    // if (typeof(listaPassata) === 'number')   listaPassata + secondoPar;
+    
     for(let i=0; i<listaPassata.length; i++){
         const valore=listaPassata[i];
 
@@ -23,13 +26,12 @@ function somma(listaPassata){
     return accumulatore;
 }
 
-
 // Qui sotto chiamo la stessa funzione più volte passando parametri diversi.
 
-const risultato = somma([8,2,3]);
+const risultato = somma([1,2,3], 2);
 console.log('sono dopo la chiamata alla funzione risultato=', risultato);
-const risultato2 = somma([1,2,3]);
-console.log('sono dopo la chiamata alla funzione risultato=', risultato2);
+// const risultato2 = somma([1,2,3]);
+// console.log('sono dopo la chiamata alla funzione risultato=', risultato2);
 // somma([10,40, 50]);
 
 

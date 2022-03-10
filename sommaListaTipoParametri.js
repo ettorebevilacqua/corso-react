@@ -15,7 +15,7 @@ function somma(listaPassata){
     console.log('sono dentro a somma, listaPassata.length=', listaPassata.length);
     // SE LISTA PASSATA NON HA .LENGTH E NON È INDICIZZABILE QUI SOTTO NON FUNZIONA
     console.log('typeof(listaPassata)', typeof(listaPassata));
-    if (typeof(listaPassata) === 'number') return listaPassata; 
+    if (typeof(listaPassata) === 'number') return listaPassata;
     
     for(let i=0; i<listaPassata.length; i++){
         const valore=listaPassata[i];
