@@ -12,8 +12,6 @@
 
 // **************************** 
 function leggiESomma(valore, accumulatore, i ){
-    const valore=valore; // legge
-
     accumulatore +=  valore; // somma
     console.log(`sono dentro a tmp valore i=${i} acc=${accumulatore} `);
     return accumulatore
