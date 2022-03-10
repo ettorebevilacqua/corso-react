@@ -50,7 +50,7 @@ const risultato4 = ciclaLista( algebra, [1,2,3] );
 console.log('sono dopo la chiamata alla funzione risultato=', risultato4);
 // console.log( 'REDUCE !!!',  [1,2,3].reduce(algebra, 0));
 
-
+git
 
 // const risultato2 = somma([1,2,3]);
 // console.log('sono dopo la chiamata alla funzione risultato=', risultato2);
