@@ -7,10 +7,12 @@
  i parametri passati prendono un nome a piacimento.
  quando chiamo la funzione passo dei valori come parametri.
   
-*/
+*/// ALT 96
+
+
 
 function somma(listaPassata, secondoPar){
-    console.log('sono dentro a somma, listaPassata=', listaPassata);
+    console.log(`sono dentro a somma, listaPassata= ${listaPassata} `);
     let accumulatore = 0;
 
     if (!listaPassata.length) return listaPassata + secondoPar;
@@ -20,7 +22,7 @@ function somma(listaPassata, secondoPar){
         const valore=listaPassata[i];
 
         accumulatore +=  valore;
-        console.log('sono dentro al for valore=' + valore + ' i='+ i, 'acc='+accumulatore);
+        console.log(`sono dentro al for valore valore i=${i} acc=${accumulatore} `);
     }
 
     return accumulatore;
