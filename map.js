@@ -4,10 +4,10 @@ Separazione delle responsabilità , specilizzazione
 le funzioni dovrebbero essere scritte in modo che si occupano di un preciso problema,
 diciamo che si assumono una singola responsabilità
 
-In altre parol, invece di fare una grossa funzione,
+In altre parole, invece di fare una grossa funzione,
 la posso spezzare in piccole funzioni specializzate a fare 1 sola cosa
 
-Questo rende più facile scrittura, la leggibilità e il mantenimento del codice,
+Questo rende più facile la scrittura, la leggibilità e il mantenimento del codice,
 oltre che ampliare il concetto di riutilizzo delle funzioni
 
 */
@@ -19,7 +19,7 @@ oltre che ampliare il concetto di riutilizzo delle funzioni
    restituendola trasformata
 
    da questo esempio deve essere chiaro, che la funzione map è specializzata a fare 1 sola cosa,
-   ciclare la lista, ma demanda che tipo di operazione fare a una funzione passata. In
+   ciclare la lista, ma demanda che tipo di operazione fare a una funzione passata.
 
    Come dire: cara map , ciclami la lista che ti passo,
     e per ogni elemento esegui la funzione che ti passo e aggiorna l'elemento della lista
@@ -27,23 +27,43 @@ oltre che ampliare il concetto di riutilizzo delle funzioni
     dentro al for chiamo la funzione passata, passando il valore della lista di indice i.
 */
 
+// NON DEVE SPORCARE LA LISTA ORIGINALE 
 function map(lista, calcola){
-    for(let i=0; i<lista.length;i++){
-        lista[i] = calcola(lista[i]) // aggiorna la lista raddoppia
-    }
-    return lista;
+    const newList=[];
+   for(let i=0; i<lista.length;i++){
+       const val = calcola(lista[i]) // aggiorna la lista raddoppia
+       newList.push(val);
+   }
+   return newList;
 }
 
-const sommaUno = valore => valore + 1;
+
+const sommaUno = function(valore){
+    return valore + 1;
+}
+
+// qui ho scritto qui sotto function in modo ridotto per scrivere una funzione solo su una riga
+// il simbolo => significa function
+// vedere differenza con sopra quanto riduciamo
+
 const dividi = valore => valore  / 2;
-const listaRaddoppiata= map([1,2,3], sommaUno );
-const listaRaddoppiata2= map([1,2,3], dividi );
+
+
+const lista=[1,2,3,4,5];
+console.log('lista prima del map =', lista);
+
+const sommataUno=map(lista, sommaUno );
+console.log('lista dopo sommaUno =', lista);
+console.log('sommataUno  =', sommataUno);
+
+const divisaDue = map(sommataUno, dividi );
+console.log('lista ora è =', divisaDue);
 
 const upper= str => str.toUpperCase();
-const listaUpper= map(['paolo','michele','pio'], upper );
+//const listaUpper= map(['paolo','michele','pio'], upper );
 
-console.log(listaRaddoppiata);
-console.log(listaRaddoppiata2);
-console.log(listaUpper);
+
+//console.log(listaDivisa);
+// console.log(listaUpper);
 
 
