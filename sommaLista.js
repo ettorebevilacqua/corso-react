@@ -11,8 +11,8 @@
 
 
 // **************************** 
-function leggiESomma(listaPassata, accumulatore){
-    const valore=listaPassata[i]; // legge
+function leggiESomma(valore, accumulatore, i ){
+    const valore=valore; // legge
 
     accumulatore +=  valore; // somma
     console.log(`sono dentro a tmp valore i=${i} acc=${accumulatore} `);
@@ -26,7 +26,7 @@ function somma(listaPassata, secondoPar){
     if (!listaPassata.length) return listaPassata + secondoPar;
     // if (typeof(listaPassata) === 'number')   listaPassata + secondoPar;
     for(let i=0; i<listaPassata.length; i++){
-        leggiESomma(listaPassata, accumulatore);
+        leggiESomma(listaPassata[i], accumulatore, i );
         console.log(`sono dentro al for valore valore i=${i} acc=${accumulatore} `);
     }
 
