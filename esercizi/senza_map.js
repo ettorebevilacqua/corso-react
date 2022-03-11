@@ -6,6 +6,7 @@
 // di questo risultato ogni elemento viene diviso per 2
 
 // esempio = entra [1,2,3] esce [1.5, 2.5, 3.5]
+// diciamo : trasformo i valori della lista !!
 
 const doubleAndSum1AndShare2=function(lista){
     const listaAggiornata = lista; // faccio un alias per aumentare la semantica
@@ -25,6 +26,5 @@ const doubleAndSum1AndShare2=function(lista){
 }
 
 const listaDoubleValuePlusOneShareTwo = doubleAndSum1AndShare2([1,2,3]);
-
 
 console.log(`listaDoubleValuePlusOneShareTwo = ${listaDoubleValuePlusOneShareTwo}`);
