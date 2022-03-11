@@ -8,27 +8,37 @@
 // le due liste sono indipendenti, voglio riutilizzare le funzioni
 
 
-const raddoppia=function(lista){
-    const listaAggiornata = lista; // faccio un alias per aumentare la semantica
+// LE FUNZIONI VANNO DOCUMENTATE
+// QUALI PARAMETRI E DI CHE TIPO E COSA RITORNA COME TIPO
+
+/**
+ * cilca ogni elemento della lista e chiama la funzione passato con il valore attuale
+ *
+ * @param {function} calcola
+ * @param {array<number>} lista
+ * @returns {array<number>}
+ */
+const ciclaEdEsegui=function(calcola, lista){
+    const listaAggiornata = []; // faccio un alias per aumentare la semantica
 
     for(let i=0; i<lista.length; i++){
         const valore = lista[i];
-        listaAggiornata[i] = valore * 2;
+        const calcolato = calcola(valore);
+        listaAggiornata.push( calcolato);
     }
     return listaAggiornata; // RITORNO lista aggiornata
 }
 
-const sommaUnoERaddoppia=function(lista){
-    const listaAggiornata = lista; // faccio un alias per aumentare la semantica
 
-    for(let i=0; i<lista.length; i++){
-        const valore = lista[i];
-        listaAggiornata[i] = (valore + 1 ) * 2;
-    }
-    return listaAggiornata; // RITORNO lista aggiornata
-}
+const divide = (a, b)=> a / b;
+const multipli= (a, b)=a*b;
+const double = valore => valore * 2;
+const addAndDouble = valore => (valore + 1 ) * 2;
 
-const doubleList = raddoppia([1,2,3]);
-const sumOneAndDoubleList = sommaUnoERaddoppia([1,2,3]);
+const lista = [1,2,3];
 
-console.log(`listaDoubleValuePlusOneShareTwo = ${listaDoubleValuePlusOneShareTwo}`);
+const doubleList = ciclaEdEsegui( double, [2, 2, 4]);
+console.log(`listaDoubleValuePlusOneShareTwo = ${doubleList}`);
+
+const sumOneAndDoubleList = ciclaEdEsegui(addAndDouble, lista);
+console.log(`listaDoubleValuePlusOneShareTwo = ${sumOneAndDoubleList}`);
