@@ -27,11 +27,16 @@ oltre che ampliare il concetto di riutilizzo delle funzioni
     dentro al for chiamo la funzione passata, passando il valore della lista di indice i.
 */
 
-// NON DEVE SPORCARE LA LISTA ORIGINALE 
+// NON DEVE SPORCARE LA LISTA ORIGINALE
 function map(lista, calcola){
-    const newList=[];
+   const newList=[];
    for(let i=0; i<lista.length;i++){
-       const val = calcola(lista[i]) // aggiorna la lista raddoppia
+       // viene passata la funzione calcola dove qui viene richiamata
+       // ho spostato fuori la logica che deve fare il fora
+       // la funzione passata deve essere dichiarata
+       // con un parametro che 2
+
+       const val = calcola(lista[i], i )
        newList.push(val);
    }
    return newList;
