@@ -8,20 +8,27 @@
 // le due liste sono indipendenti, voglio riutilizzare le funzioni
 
 
-function ciclaEdEsegue( calcoloDaFareFunz,  lista){
+const raddoppia=function(lista){
     const listaAggiornata = lista; // faccio un alias per aumentare la semantica
 
     for(let i=0; i<lista.length; i++){
         const valore = lista[i];
-        listaAggiornata[i] = calcoloDaFareFunz(valore);
+        listaAggiornata[i] = valore * 2;
     }
     return listaAggiornata; // RITORNO lista aggiornata
 }
 
-const double = pippo => pippo * 2;
-const sumOneAndDouble = val => (val + 1 ) * 2;
+const sommaUnoERaddoppia=function(lista){
+    const listaAggiornata = lista; // faccio un alias per aumentare la semantica
 
-const doubleList = ciclaEdEsegue(double  [1,2,3]);
-const sumOneAndDoubleList = ciclaEdEsegue(ciclaEdEsegue, [1,2,3]);
+    for(let i=0; i<lista.length; i++){
+        const valore = lista[i];
+        listaAggiornata[i] = (valore + 1 ) * 2;
+    }
+    return listaAggiornata; // RITORNO lista aggiornata
+}
+
+const doubleList = raddoppia([1,2,3]);
+const sumOneAndDoubleList = sommaUnoERaddoppia([1,2,3]);
 
 console.log(`listaDoubleValuePlusOneShareTwo = ${listaDoubleValuePlusOneShareTwo}`);
