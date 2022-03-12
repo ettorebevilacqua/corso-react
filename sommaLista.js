@@ -14,7 +14,7 @@
 
 function ciclaLista(funzDaPassare, listaPassata){
    //  console.log(`sono dentro a somma, listaPassata= ${listaPassata} `);
-    let accumulatore = 0;
+    let accumulatore = 2;
 
     // caro for ciclami listaPassata e chiama funzDaPassare, con risultato sul accumulatore
     for(let i=0; i<listaPassata.length; i++){
