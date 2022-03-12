@@ -7,7 +7,7 @@
  i parametri passati prendono un nome a piacimento.
  quando chiamo la funzione passo dei valori come parametri.
 
-*/// ALT 96
+*/// ALT 96 o alt + shift + ù
 
 
 // **************************** 

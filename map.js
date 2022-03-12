@@ -28,7 +28,7 @@ oltre che ampliare il concetto di riutilizzo delle funzioni
 */
 
 // NON DEVE SPORCARE LA LISTA ORIGINALE
-function map(lista, calcola){
+function map(lista, callBack){
    const newList=[];
    for(let i=0; i<lista.length;i++){
        // viene passata la funzione calcola dove qui viene richiamata
@@ -36,7 +36,7 @@ function map(lista, calcola){
        // la funzione passata deve essere dichiarata
        // con un parametro che 2
 
-       const val = calcola(lista[i], i )
+       const val = callBack(lista[i], i )
        newList.push(val);
    }
    return newList;

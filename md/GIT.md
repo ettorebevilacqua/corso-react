@@ -1,9 +1,9 @@
 git clone :
 
 
-// nuovo progetto 
+// ***************** nuovo progetto
 
-echo "# corso-react" >> README.md // crea il file readme 
+echo "# corso-react" >> README.md // crea il file readme
 git init     // inizializza un repository, crea la cartella .git con il file di config
 git add .   // aggiugiamo tutti i file 
 git commit -m "first commit" // qui preparo i files per il push, serve una descrzione delle modifiche
@@ -11,11 +11,17 @@ git branch -M main // qui si sposta di RAMO
 git remote add origin https://github.com/ettorebevilacqua/corso-react.git  // qui aggiunge il repository remoto
 git push -u origin main // mette dentro al branch main i file aggiunti con git add 
 
-// repository esistente
+se da errori, e vi chiede di fare il pull, vi da errore perchè potrebbe trovare delle differenze con il repository su git, gli possiamo dire di ignorare, forzando la versione attuale locale che abbiamo
+
+git push -u origin main --force
+
+// attenzione a force qui non abbiamo problemi a chiamarlo perchè sono sicuro che volglio che la versione locale attuale corrisponde a qualle remota
+
+// repository esistente ******************
 
 git remote add origin https://github.com/ettorebevilacqua/corso-react.git  
 git branch -M main 
-git push -u origin main 
+git push -u origin main  
 
 // generare accese stare attenti a fleggare la voce repo 
 https://github.com/settings/tokens
