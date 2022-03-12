@@ -10,7 +10,7 @@
 */// ALT 96 o alt + shift + ù
 
 
-// **************************** 
+// ****************************   
 
 function ciclaLista(funzDaPassare, listaPassata){
    //  console.log(`sono dentro a somma, listaPassata= ${listaPassata} `);
@@ -19,7 +19,7 @@ function ciclaLista(funzDaPassare, listaPassata){
     // caro for ciclami listaPassata e chiama funzDaPassare, con risultato sul accumulatore
     for(let i=0; i<listaPassata.length; i++){
         // qui chiamo La funzione passata per fare il calcolo
-        accumulatore = funzDaPassare(listaPassata[i], accumulatore, i );
+      //  accumulatore = funzDaPassare(listaPassata[i], accumulatore, i );
         // console.log(`sono dentro al for valore valore i=${i} acc=${accumulatore} `);
     }
 
@@ -35,6 +35,9 @@ function somma(valore, accumulatore, i ){
 const moltiplica = (a, b) => a * b;
 const dividi = (a, b) => a / b;
 const algebra = (a, b) => (a * a) + (b * b);
+const algebra = (a, b) => (a * a) + (b * b);
+
+const risultato = ciclaLista( somma, [1,2,3] );
 
 const risultato = ciclaLista( somma, [1,2,3] );
 console.log('sono dopo la chiamata alla funzione risultato=', risultato);

@@ -81,3 +81,7 @@ vedi qui https://docs.github.com/en/authentication/keeping-your-account-and-data
 
 e quindi dare nome utente, l'utente di git 
 password, l'access token generate 
+
+
+comando utile 
+git stash 
