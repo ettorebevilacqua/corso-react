@@ -13,12 +13,12 @@
 
 function ciclaLista(funzDaPassare, listaPassata){
    //  console.log(`sono dentro a somma, listaPassata= ${listaPassata} `);
-    let accumulatore = 2;
+    let accumulatore = 0;
 
     // caro for ciclami listaPassata e chiama funzDaPassare, con risultato sul accumulatore
     for(let i=0; i<listaPassata.length; i++){
         // qui chiamo La funzione passata per fare il calcolo
-      //  accumulatore = funzDaPassare(listaPassata[i], accumulatore, i );
+        accumulatore = funzDaPassare(listaPassata[i], accumulatore, i );
         // console.log(`sono dentro al for valore valore i=${i} acc=${accumulatore} `);
     }
 
