@@ -48,8 +48,5 @@ mi dovrei trovare le cartelle di questo tipo
   - |  Asteroid
   - |  esempio
 
-Ripeto : aprire la cartella dentro a corso, non corso.
+Ripeto : aprire la cartella dentro a corso-react, non corso.
 
-per vedere se tutto è ok, proviamo :
-
-`git pull origin main` 
