@@ -45,6 +45,24 @@ Con il paramentro -m indichiamo una descrizione del commit.
 
 `git commit -m "<commit message>"`
 
+# git diff
+
+Potete usare questo comando per vedere le modifiche nel branch corrente, quali file e il contenuto 
 `git diff`
 
-Potete usare questo comando per vedere le modifiche nel branch corrente
+# git branch
+
+elenca i branch presenti nel repository.
+
+`git branch`
+
+oppure creo un nuovo branch rimanendno in quello corrente:
+
+`git branch <new branch>`
+
+per crearlo e contemporaneamente spotarsi dentro :
+`git branch -m <new branch>` 
+
+per eliminare un branch:
+
+`git branch -d <branch name>`
